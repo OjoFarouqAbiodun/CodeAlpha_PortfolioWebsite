@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    background: #ffffff;
+    color: #111;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100vh;
+    padding: 40px 30px;
+    background: #f9f9f9;
+    border-right: 1px solid #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.role {
+    font-size: 16px;
+    color: #777;
+}
+
+.nav a {
+    display: block;
+    text-decoration: none;
+    color: #111;
+    margin-bottom: 15px;
+    font-size: 17px;
+    transition: 0.3s ease;
+}
+
+.nav a:hover {
+    color: #007bff;
+}
+
+.socials a {
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    color: #007bff;
+}
+
+/* MAIN CONTENT */
+.content {
+    margin-left: 260px;
+    padding: 50px;
+    width: calc(100% - 260px);
+}
+
+/* SECTIONS */
+.section {
+    margin-bottom: 100px;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* HERO */
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero span {
+    color: #007bff;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #444;
+    max-width: 450px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 12px 20px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #005fcc;
+}
+
+/* PROJECTS */
+.project-card {
+    padding: 25px;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    background: #fafafa;
+}
+
+.project-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.project-links {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn-small {
+    padding: 8px 14px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.btn-small:hover {
+    background: #005fcc;
+}
+
+/* CONTACT */
+.contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 800px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 200px;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+}
