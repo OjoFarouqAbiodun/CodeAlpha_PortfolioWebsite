@@ -13,6 +13,8 @@ body {
     height: 100vh;
     padding: 2rem;
     background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(247,220,236), rgb(199,167,229));
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .nav-bar {
